@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recieve"
+    android:background="@color/black">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+        <RelativeLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/backbt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+
+                >
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recieve"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+
+                android:textColor="@color/white"></TextView>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/linear"
+            android:padding="15dp">
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/linear"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/safesenderqr">
+
+            </ImageView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl1"
+            android:background="@drawable/recievescreen"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:id="@+id/curency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Currency"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+
+                />
+            <ImageView
+                android:id="@+id/clogo"
+                android:layout_width="35dp"
+                android:layout_height="45dp"
+                android:src="@drawable/icus"
+                android:layout_below="@id/curency"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp">
+
+            </ImageView>
+            <Spinner
+                android:id="@+id/rcspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/spinner_background"
+                android:entries="@array/SpinnerEntries"
+                android:backgroundTint="@color/white"
+                android:layout_below="@id/curency"
+                android:layout_toRightOf="@id/clogo"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true">
+
+            </Spinner>
+            <TextView
+                android:id="@+id/ssid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clogo"
+                android:text="SafeSender ID"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/ssid2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="123 456 789"
+                android:textSize="20sp"
+                android:layout_below="@id/ssid"
+                android:textColor="@color/gray1"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:drawableEnd="@drawable/copy"
+                android:layout_marginRight="25dp"
+               >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/emailrc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_below="@id/ssid2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold">
+
+            </TextView>
+            <TextView
+                android:id="@+id/emailrc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="safesender@gmail.com"
+                android:layout_below="@id/emailrc"
+                android:textSize="18sp"
+                android:textColor="@color/gray1"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:drawableEnd="@drawable/copy"
+                android:layout_marginRight="25dp">
+
+            </TextView>
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

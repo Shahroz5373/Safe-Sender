@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:padding="5dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/sv"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/container_image"
+            />
+
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/totalamount"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:textSize="40dp"
+            android:layout_below="@+id/Currencies"
+            android:layout_marginTop="25dp"
+            >
+        </TextView>
+
+
+        <Spinner
+            android:id="@+id/Currencies"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/SpinnerEntries"
+            android:spinnerMode="dropdown"
+            android:background="@drawable/spinner_background"
+            android:backgroundTint="@color/Violet"
+            android:layout_marginTop="10dp"
+
+
+
+
+            >
+
+        </Spinner>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/icview"
+            android:layout_below="@id/Currencies"
+            android:layout_toRightOf="@id/amount"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="37dp"
+
+
+
+
+            >
+
+        </ImageView>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCC"
+            android:backgroundTint="@color/black"
+            android:layout_below="@id/amount"
+            android:layout_marginTop="90dp"
+            >
+        </View>
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarSize="3dp"
+            android:scrollbarThumbVertical="@color/Violet"
+            android:layout_below="@id/view1"
+            android:layout_marginTop="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:id="@+id/relativebt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    >
+                    <Button
+                        android:id="@+id/bt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Tranparent"
+                        android:drawableTop="@drawable/ic_sendmoney"
+                        android:text="Send"
+                        android:textSize="10sp"
+                        android:textColor="@color/white"
+                        android:layout_alignParentStart="true"
+
+                        android:layout_weight="1"
+
+                        >
+                    </Button>
+                    <Button
+                        android:id="@+id/bt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/Tranparent"
+                        android:drawableTop="@drawable/ic_recievemoney"
+                        android:text="Recieve"
+                        android:textSize="10sp"
+                        android:textColor="@color/white"
+
+                        >
+                    </Button>
+                    <Button
+                        android:id="@+id/bt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/Tranparent"
+                        android:drawableTop="@drawable/ic_qrscan"
+                        android:text="Scan"
+                        android:textSize="10sp"
+                        android:textColor="@color/white"
+
+
+
+                        >
+                    </Button>
+                    <Button
+                        android:id="@+id/bt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/Tranparent"
+                        android:drawableTop="@drawable/ic_transactions"
+                        android:text="History"
+
+
+                        android:textSize="10sp"
+                        android:textColor="@color/white"
+                        android:layout_alignParentEnd="true"
+                        >
+                    </Button>
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/usicon"
+                    android:layout_width="40dp"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/relativebt"
+                    android:src="@drawable/icus"
+                    android:layout_marginTop="5dp"
+                    >
+
+                </ImageView>
+                <TextView
+                    android:id="@+id/cname1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativebt"
+                    android:text="USD"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/usicon"
+                    android:layout_marginTop="18dp"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="20dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/am1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativebt"
+                    android:text="0.0$"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:layout_toRightOf="@+id/cname1"
+                    android:layout_marginTop="15dp"
+                    android:gravity="right">
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/euroicon"
+                    android:layout_width="40dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/iceuro"
+                    android:layout_below="@id/usicon">
+                </ImageView>
+                <TextView
+                    android:id="@+id/cname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EUR"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/euroicon"
+                    android:layout_below="@id/cname1"
+                    android:layout_marginTop="25dp"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="20dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/am2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.0€"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:layout_toRightOf="@+id/cname2"
+                    android:layout_below="@id/am1"
+                    android:layout_marginTop="25dp"
+                    android:gravity="right">
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/ukicon"
+                    android:layout_width="40dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/icuk"
+                    android:layout_below="@id/euroicon">
+                </ImageView>
+                <TextView
+                    android:id="@+id/cname3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GBP"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/ukicon"
+                    android:layout_below="@id/cname2"
+                    android:layout_marginTop="25dp"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="20dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/am3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.0£"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:layout_toRightOf="@+id/cname3"
+                    android:layout_below="@id/am2"
+                    android:layout_marginTop="25dp"
+                    android:gravity="right">
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/uaeicon"
+                    android:layout_width="40dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/icuae"
+                    android:layout_below="@id/ukicon">
+                </ImageView>
+                <TextView
+                    android:id="@+id/cname4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AED"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/uaeicon"
+                    android:layout_below="@id/cname3"
+                    android:layout_marginTop="23dp"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="20dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/am4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="د.إ‎0.0"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:layout_toRightOf="@+id/cname4"
+                    android:layout_below="@id/am3"
+                    android:layout_marginTop="25dp"
+                    android:gravity="right">
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/chinaicon"
+                    android:layout_width="40dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/icchina"
+                    android:layout_below="@id/uaeicon">
+                </ImageView>
+                <TextView
+                    android:id="@+id/cname5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CNY"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/chinaicon"
+                    android:layout_below="@id/cname4"
+                    android:layout_marginTop="25dp"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="20dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/am5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.0¥"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:layout_toRightOf="@+id/cname5"
+                    android:layout_below="@id/am4"
+                    android:layout_marginTop="25dp"
+                    android:gravity="right">
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/Pakistanicon"
+                    android:layout_width="40dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/icpakistan"
+                    android:layout_below="@id/chinaicon">
+                </ImageView>
+                <TextView
+                    android:id="@+id/cname6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PKR"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/Pakistanicon"
+                    android:layout_below="@id/cname5"
+                    android:layout_marginTop="23dp"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="20dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/am6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rs0.0"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:layout_toRightOf="@+id/cname6"
+                    android:layout_below="@id/am5"
+                    android:layout_marginTop="23dp"
+                    android:gravity="right">
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/ausicon"
+                    android:layout_width="40dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/icaustralia"
+                    android:layout_below="@id/Pakistanicon">
+                </ImageView>
+                <TextView
+                    android:id="@+id/cname7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AUD"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/ausicon"
+                    android:layout_below="@id/cname6"
+                    android:layout_marginTop="23dp"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="20dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/am7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.0$"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:layout_toRightOf="@+id/cname7"
+                    android:layout_below="@id/am6"
+                    android:layout_marginTop="23dp"
+                    android:gravity="right">
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/russiaicon"
+                    android:layout_width="40dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/icrussia"
+                    android:layout_below="@id/ausicon">
+                </ImageView>
+                <TextView
+                    android:id="@+id/cname8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RUB"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/russiaicon"
+                    android:layout_below="@id/cname7"
+                    android:layout_marginTop="25dp"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="20dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/am8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.0₽"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:layout_toRightOf="@+id/cname8"
+                    android:layout_below="@id/am7"
+                    android:layout_marginTop="25dp"
+                    android:gravity="right">
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/turkeyicon"
+                    android:layout_width="40dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/icturkey"
+                    android:layout_below="@id/russiaicon">
+                </ImageView>
+                <TextView
+                    android:id="@+id/cname9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TRY"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/turkeyicon"
+                    android:layout_below="@id/cname8"
+                    android:layout_marginTop="25dp"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="20dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/am9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.0₺"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:layout_toRightOf="@+id/cname9"
+                    android:layout_below="@id/am8"
+                    android:layout_marginTop="25dp"
+                    android:gravity="right">
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/qataricon"
+                    android:layout_width="40dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/icqatar"
+                    android:layout_below="@id/turkeyicon">
+                </ImageView>
+                <TextView
+                    android:id="@+id/cname10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QAR"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/qataricon"
+                    android:layout_below="@id/cname9"
+                    android:layout_marginTop="25dp"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="20dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/am10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" ر.ق0.0"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:layout_toRightOf="@+id/cname10"
+                    android:layout_below="@id/am9"
+                    android:layout_marginTop="25dp"
+                    android:gravity="right">
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/kuwaiticon"
+                    android:layout_width="40dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/ickuwait"
+                    android:layout_below="@id/qataricon">
+                </ImageView>
+                <TextView
+                    android:id="@+id/cname11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KWD"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/kuwaiticon"
+                    android:layout_below="@id/cname10"
+                    android:layout_marginTop="23dp"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="20dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/am11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" د.ك0.0"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:layout_toRightOf="@+id/cname11"
+                    android:layout_below="@id/am10"
+                    android:layout_marginTop="23dp"
+                    android:gravity="right"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/canadaicon"
+                    android:layout_width="40dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/iccanada"
+                    android:layout_below="@id/kuwaiticon">
+                </ImageView>
+                <TextView
+                    android:id="@+id/cname12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CAD"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/canadaicon"
+                    android:layout_below="@id/cname11"
+                    android:layout_marginTop="25dp"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="20dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/am12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.0$"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:layout_toRightOf="@+id/cname12"
+                    android:layout_below="@id/am11"
+                    android:layout_marginTop="25dp"
+                    android:gravity="right"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/argentinaicon"
+                    android:layout_width="40dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/icargentina"
+                    android:layout_below="@id/canadaicon">
+                </ImageView>
+                <TextView
+                    android:id="@+id/cname13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ARS"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/argentinaicon"
+                    android:layout_below="@id/cname12"
+                    android:layout_marginTop="24dp"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="20dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/am13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.0$"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:layout_toRightOf="@+id/cname13"
+                    android:layout_below="@id/am12"
+                    android:layout_marginTop="24dp"
+                    android:gravity="right"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/southkoreaicon"
+                    android:layout_width="40dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/icsouthkorea"
+                    android:layout_below="@id/argentinaicon">
+                </ImageView>
+                <TextView
+                    android:id="@+id/cname14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KRW"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/southkoreaicon"
+                    android:layout_below="@id/cname13"
+                    android:layout_marginTop="23dp"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="20dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/am14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.0₩"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:layout_toRightOf="@+id/cname14"
+                    android:layout_below="@id/am13"
+                    android:layout_marginTop="23dp"
+                    android:gravity="right"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/nzicon"
+                    android:layout_width="40dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/icnewzealand"
+                    android:layout_below="@id/southkoreaicon">
+                </ImageView>
+                <TextView
+                    android:id="@+id/cname15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NZD"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/nzicon"
+                    android:layout_below="@id/cname14"
+                    android:layout_marginTop="24dp"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="20dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/am15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.0$"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:layout_toRightOf="@+id/cname15"
+                    android:layout_below="@id/am14"
+                    android:layout_marginTop="24dp"
+                    android:gravity="right"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/brazilicon"
+                    android:layout_width="40dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/icbrazil"
+                    android:layout_below="@id/nzicon">
+                </ImageView>
+                <TextView
+                    android:id="@+id/cname16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BRL"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/brazilicon"
+                    android:layout_below="@id/cname15"
+                    android:layout_marginTop="25dp"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="20dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/am16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.0R$"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:layout_toRightOf="@+id/cname16"
+                    android:layout_below="@id/am15"
+                    android:layout_marginTop="25dp"
+                    android:gravity="right"
+                    android:layout_marginBottom="60dp"
+                    >
+
+                </TextView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

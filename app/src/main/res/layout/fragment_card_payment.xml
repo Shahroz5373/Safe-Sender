@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardPayment"
+    android:background="@color/black">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Card Transfer"
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="italic"
+            />
+        <View
+            android:id="@+id/view1"
+            android:layout_below="@id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/Violet"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Card Holder Name"
+            android:layout_below="@id/view1"
+            android:textSize="25sp"
+            android:layout_marginBottom="15dp"
+            />
+
+        <EditText
+            android:id="@+id/holderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:hint="Enter card holder name"
+            android:inputType="text"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/stroke"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/holderName"
+            android:textColor="@color/white"
+            android:text="Card Number"
+            android:textSize="25sp"
+            android:layout_marginBottom="15dp"
+            />
+
+        <EditText
+            android:id="@+id/CardNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card"
+            android:hint="0000 0000 0000 0000"
+            android:inputType="number"
+            android:maxLength="19"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/stroke"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/cvc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CVV/CVC"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_below="@id/CardNo"
+
+            />
+        <EditText
+            android:id="@+id/CVV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="CVV/CVC"
+            android:textColorHint="@color/gray"
+            android:layout_below="@id/cvc"
+            android:background="@drawable/stroke"
+            android:maxLength="4"
+            android:padding="15dp"
+            android:inputType="number"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiry Date"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_below="@id/CardNo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+
+            />
+        <EditText
+            android:id="@+id/ExpDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Expiry Date"
+            android:textColorHint="@color/gray"
+            android:layout_below="@id/cvc"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/stroke"
+            android:padding="15dp"
+            android:maxLength="5"
+            android:inputType="datetime"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ExpDate"
+            android:layout_marginTop="20dp"
+            android:text="Save"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/Violet"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>

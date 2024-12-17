@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BankPayment"
+    android:background="@color/black">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            android:id="@id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bank Transfer"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="italic"
+            />
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/text1"
+            android:background="@color/Violet"
+            android:layout_marginBottom="15dp"/>
+
+
+        <ScrollView
+            android:layout_below="@id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Details"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:layout_marginBottom="20dp"/>
+                <TextView
+                    android:id="@+id/usrName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/text2"
+                    android:text="Full Name"
+                    android:textSize="22sp"
+                    android:layout_marginBottom="15dp"
+                    />
+                <EditText
+                    android:id="@+id/Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/usrName"
+                    android:inputType="text"
+                    android:hint="Enter full name"
+                    android:textColorHint="@color/gray"
+                    android:background="@drawable/stroke"
+                    android:padding="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/Name"
+                    android:text="Phone Number"
+                    android:textSize="22sp"
+                    android:layout_marginBottom="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/phoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phone"
+                    android:hint="Enter phone number"
+                    android:inputType="phone"
+                    android:textColorHint="@color/gray"
+                    android:background="@drawable/stroke"
+                    android:padding="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phoneNo"
+                    android:textColor="@color/white"
+                    android:text="Country"
+                    android:textSize="22sp"
+                    android:layout_marginBottom="15dp"
+                    />
+                <AutoCompleteTextView
+                    android:id="@+id/Country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/stroke"
+                    android:layout_below="@id/country"
+                    android:padding="15dp"
+                    android:hint="Enter country"
+                    android:drawableEnd="@drawable/dropdown"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray"
+                    android:layout_marginBottom="20dp"/>
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Country"
+                    android:textColor="@color/white"
+                    android:text="Bank Details"
+                    android:textSize="25sp"
+                    android:layout_marginBottom="15dp"/>
+                <TextView
+                    android:id="@+id/bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text3"
+                    android:text="Bank Name"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:layout_marginBottom="15dp"/>
+                <AutoCompleteTextView
+                    android:id="@+id/BankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/stroke"
+                    android:layout_below="@id/bank"
+                    android:padding="15dp"
+                    android:hint="Enter Bank Name"
+                    android:drawableEnd="@drawable/dropdown"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray"
+                    android:layout_marginBottom="20dp"/>
+                <TextView
+                    android:id="@+id/account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/BankName"
+                    android:text="IBAN/Account"
+                    android:textSize="22sp"
+                    android:layout_marginBottom="15dp"
+                    />
+                <EditText
+                    android:id="@+id/AccountNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/account"
+                    android:inputType="text"
+                    android:hint="Enter IBAN/Account No"
+                    android:textColorHint="@color/gray"
+                    android:background="@drawable/stroke"
+                    android:padding="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/AccountNo"
+                    android:layout_marginTop="20dp"
+                    android:text="Save"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:padding="15dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/Violet"
+                    android:layout_marginBottom="50dp"/>
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>
