@@ -6,7 +6,7 @@
         />
     <stroke
         android:width="3dp"
-        android:color="@color/Violet"
+        android:color="@color/NeonGreen"
 
         />
     <corners

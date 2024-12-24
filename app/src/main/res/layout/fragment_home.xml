@@ -45,8 +45,9 @@
             android:entries="@array/SpinnerEntries"
             android:spinnerMode="dropdown"
             android:background="@drawable/spinner_background"
-            android:backgroundTint="@color/Violet"
-            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/NeonGreen"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
 
 
 
@@ -85,7 +86,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbarSize="3dp"
-            android:scrollbarThumbVertical="@color/Violet"
+            android:scrollbarThumbVertical="@color/NeonGreen"
             android:layout_below="@id/view1"
             android:layout_marginTop="10dp"
             >
@@ -139,6 +140,7 @@
                         android:drawableTop="@drawable/ic_qrscan"
                         android:text="Scan"
                         android:textSize="10sp"
+
                         android:textColor="@color/white"
 
 
