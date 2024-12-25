@@ -42,6 +42,13 @@ public class log_in extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        ImageView back=findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         ImageView biometric = findViewById(R.id.finger_print);
         biometric.setOnClickListener(new View.OnClickListener() {
