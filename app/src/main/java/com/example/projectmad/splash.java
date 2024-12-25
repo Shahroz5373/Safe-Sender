@@ -33,7 +33,8 @@ public class splash extends AppCompatActivity {
             startActivity(intent);
             finish(); // Close the splash activity
         });
-        getSupportActionBar().hide();
+
         videoView.start();
+        getSupportActionBar().hide();
     }
 }

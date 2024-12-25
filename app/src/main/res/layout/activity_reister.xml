@@ -16,16 +16,26 @@
         android:layout_margin="15dp"
         >
 
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"/>
         <TextView
             android:id="@+id/register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/back"
             android:text="Create an Account"
+            android:textSize="25sp"
+            android:textStyle="bold"
             android:textColor="@color/white"
-            android:textSize="30sp"
-            android:layout_marginBottom="15dp"
-            android:layout_marginTop="10dp"
-            />
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="15dp"/>
 
         <TextView
             android:id="@+id/txt1"
@@ -234,13 +244,14 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/pass"
                     android:text="Register"
-                    android:padding="16dp"
-                    android:textColor="@color/white"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
                     android:textSize="16sp"
                     android:gravity="center"
                     android:layout_marginBottom="15dp"
                     android:layout_marginTop="15dp"
-                    android:backgroundTint="@color/Violet"/>
+                    android:backgroundTint="@color/NeonGreen"/>
                 <TextView
                     android:id="@+id/google"
                     android:layout_width="match_parent"

@@ -67,7 +67,7 @@ public class samecurrency extends Fragment {
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getActivity(),recipient2.class);
+                Intent intent=new Intent(getActivity(),recipient.class);
                 startActivity(intent);
             }
         });

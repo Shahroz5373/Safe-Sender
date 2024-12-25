@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.projectmad"
-        minSdk = 24
+        minSdk = 23
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -42,6 +42,7 @@ dependencies {
     implementation(libs.lifecycle.livedata.ktx)
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.navigation.fragment)
+    implementation("androidx.biometric:biometric:1.1.0")
     implementation(libs.navigation.ui)
     implementation(libs.activity)
     testImplementation(libs.junit)
