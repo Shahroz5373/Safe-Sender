@@ -26,7 +26,7 @@
                 app:srcCompat="@drawable/prof"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="40dp"
                 android:padding="5dp"
                 />
             <TextView
@@ -65,7 +65,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:layout_below="@id/accounts"
-                    android:background="@color/Violet"
+                    android:background="@color/NeonGreen"
                     android:layout_marginBottom="10dp"/>
 
                 <TextView
@@ -133,7 +133,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:layout_below="@id/general"
-                    android:background="@color/Violet"
+                    android:background="@color/NeonGreen"
                     android:layout_marginBottom="10dp"/>
                 <TextView
                     android:id="@+id/region"
@@ -189,7 +189,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:layout_below="@id/transaction"
-                    android:background="@color/Violet"
+                    android:background="@color/NeonGreen"
                     android:layout_marginBottom="10dp"/>
                 <TextView
                     android:id="@+id/limits"
