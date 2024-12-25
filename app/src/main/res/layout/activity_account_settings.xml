@@ -51,7 +51,7 @@
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:padding="5dp"
+            android:padding="15dp"
             android:background="@drawable/stroke"/>
         <TextView
             android:id="@+id/name"
@@ -122,9 +122,10 @@
             android:layout_below="@+id/Phone"
             android:text="Save Changes"
             android:textSize="16sp"
-            android:padding="8dp"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/Violet"/>
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:backgroundTint="@color/NeonGreen"/>
 
     </RelativeLayout>
 

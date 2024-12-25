@@ -44,7 +44,9 @@
         <ScrollView
             android:layout_below="@+id/back"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:scrollbarSize="3dp"
+            android:scrollbarThumbVertical="@color/NeonGreen">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

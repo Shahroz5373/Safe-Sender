@@ -25,7 +25,7 @@
             android:layout_below="@id/text1"
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="@color/Violet"
+            android:background="@color/NeonGreen"
             android:layout_marginBottom="15dp"
             />
 
@@ -137,8 +137,8 @@
             android:textStyle="bold"
             android:textSize="18sp"
             android:padding="15dp"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/Violet"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/NeonGreen"
             />
 
 
