@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:background="@color/white"
+    tools:context=".WalletFragment"
+    >
+
+    <RelativeLayout
+        android:id="@+id/containerBalance"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/wallet_container_round"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:elevation="10dp">
+        <TextView
+            android:id="@+id/mybalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Balance"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"/>
+        <TextView
+            android:id="@+id/totalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"
+            android:layout_below="@id/mybalance"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp">
+        </TextView>
+        <TextView
+            android:id="@+id/totalAmountsign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_below="@id/mybalance"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/totalAmount">
+        </TextView>
+        <Spinner
+            android:id="@+id/Currencies"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/SpinnerEntries"
+            android:spinnerMode="dropdown"
+            android:background="@drawable/spinner_background"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentEnd="true"
+            >
+
+        </Spinner>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/buttonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_below="@id/containerBalance"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/Tranparent"
+        android:elevation="10dp">
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="@drawable/wallet_container_round"
+
+            >
+            <Button
+                android:id="@+id/send_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/send"
+                android:backgroundTint="@color/Wallet"
+                android:text="Send"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:gravity="center"
+                >
+            </Button>
+
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/wallet_container_round"
+
+            >
+            <Button
+                android:id="@+id/recieve"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/recieve"
+                android:backgroundTint="@color/Wallet"
+                android:text="Recieve"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:gravity="center"
+
+                >
+            </Button>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+
+            android:background="@drawable/wallet_container_round"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/withdraw"
+                android:backgroundTint="@color/Wallet"
+                android:text="Withdraw"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="9sp"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:gravity="center"
+                >
+
+            </Button>
+
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/wallet_container_round"
+            >
+            <Button
+                android:id="@+id/scanQRCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/scanqr"
+                android:backgroundTint="@color/Wallet"
+                android:text="Scan"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:gravity="center"
+                >
+
+            </Button>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonsContainer">
+        <View
+            android:id="@+id/divLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/availA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Assets"
+            android:layout_below="@id/divLine"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp">
+
+        </TextView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mainRecycler"
+            android:layout_below="@id/availA"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

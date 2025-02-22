@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white2">#F5F5F5</color>
+    <color name="Home">#C9379D</color>
+    <color name="Notification">#AE7E0F</color>
+
+    <color name="Tranparent">#00000000</color>
+
+    <color name="Home2">#7BC9379D</color>
+    <color name="Notification2">#99AE7E0F</color>
+
+
+
+    <color name="Wallet">#4285F4</color>
+    <color name="Swap">#EA4335</color>
+    <color name="Notifications">#FFFF00</color>
+    <color name="Profile">#3FA335</color>
+
+
+    <color name="Wallet2">#5A4285F4</color>
+    <color name="Swap2">#59EA4335</color>
+    <color name="Notifications2">#5AFFFF00</color>
+    <color name="Profile2">#5A3FA335</color>
+
+    <color name="gray">#dfdfdf</color>
+    <color name="gray2">#645C5C</color>
+    <color name="gray3">#978787</color>
+    <color name="gray4">#e6e6e6</color>
+
+
+
+
+
+
+
+
+
+</resources>

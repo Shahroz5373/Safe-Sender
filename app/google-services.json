@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "918067381805",
+    "project_id": "safe-sender-26627",
+    "storage_bucket": "safe-sender-26627.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918067381805:android:10e3a45c56f7eb7d80daa4",
+        "android_client_info": {
+          "package_name": "com.example.safesenderapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVi5PIcz4jGw_IDLtLuWdBksw9cyHbMqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

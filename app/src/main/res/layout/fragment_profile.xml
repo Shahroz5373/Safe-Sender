@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profileFragment"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@drawable/profile_background"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        >
+        <ImageView
+            android:id="@+id/profile1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/profile_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/nameProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile1"
+            android:layout_centerHorizontal="true"
+            android:text="Profile"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="4dp"/>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/profile_container_round"
+        android:elevation="10dp"
+
+        >
+        <ImageView
+            android:id="@+id/accountInfo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/profile_info"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/accountInfo"
+            android:text="Account Information"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/copy"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/copy"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"/>
+        <TextView
+            android:id="@+id/usernameH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accountInfo"
+            android:text="Username: "
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+
+
+
+        <TextView
+            android:id="@+id/uidH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameH"
+            android:text="UID: "
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/emailH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uidH"
+            android:text="Email: "
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/phoneH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailH"
+            android:text="Phone Number: "
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="25dp"/>
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/usernameH"
+            android:layout_below="@id/accountInfo"
+            android:text="Loading..."
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:gravity="end"
+            />
+        <TextView
+            android:id="@+id/uid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/uidH"
+            android:layout_below="@id/username"
+            android:text="Loading..."
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:gravity="end"
+            />
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/emailH"
+            android:layout_below="@id/uid"
+            android:text="Loading..."
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:gravity="end"
+            />
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/phoneH"
+            android:layout_below="@id/email"
+            android:text="Loading..."
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:gravity="end"
+            android:layout_marginBottom="25dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relative3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:elevation="30dp"
+        android:background="@drawable/profile_container_round">
+        <ImageView
+            android:id="@+id/profileVerification"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/profile_verification"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/profileVerification"
+            android:text="Account Verification"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileVerification"
+            android:text="Status:"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/profileVerification"
+            android:layout_toEndOf="@+id/status"
+            android:background="@drawable/round_back_verification"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp">
+            <TextView
+                android:id="@+id/verification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verified"
+                android:textColor="@color/Profile"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:layout_marginStart="3dp"
+                />
+            <ImageView
+
+                android:id="@+id/verifyImage"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/verify"
+                android:adjustViewBounds="true"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/verification"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="3dp"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/verifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Verify"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/Profile"
+        android:backgroundTint="@color/Profile2">
+
+    </Button>
+
+
+
+
+</RelativeLayout>

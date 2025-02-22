@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/safeChatbot"
+    >
+    <RelativeLayout
+        android:id="@+id/aiScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:elevation="1dp"
+
+        >
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back2"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            >
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI Chatbot"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+            android:textColor="@color/black"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/userInput"
+
+        android:layout_below="@id/aiScreen"
+        android:fillViewport="true"
+
+        >
+    <LinearLayout
+        android:id="@+id/chat_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/userInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp">
+
+        <EditText
+            android:id="@+id/message_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:hint="Enter your message"
+            android:textColorHint="@color/gray2"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+
+            />
+
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+
+            android:layout_gravity="center_vertical"
+            android:drawableTop="@drawable/send_button"
+            android:padding="8dp"
+            android:backgroundTint="@color/Profile2"
+            android:layout_marginEnd="10dp"
+
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

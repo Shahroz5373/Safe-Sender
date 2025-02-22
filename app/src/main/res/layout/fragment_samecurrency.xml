@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".samecurrency">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/wallet_container_round"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+
+            >
+            <TextView
+                android:id="@+id/send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You Send"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/avail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/availamount"
+                android:text="Available"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/availamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0.0$"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/csend"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+
+                android:spinnerMode="dialog"
+                android:background="@drawable/spinner_background"
+                android:backgroundTint="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+
+                >
+
+            </Spinner>
+
+            <EditText
+                android:id="@+id/sendamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@id/csend"
+                android:hint="Amount"
+                android:textColorHint="@color/white"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@id/send"
+                android:layout_marginTop="28dp"
+                android:background="@color/Tranparent"
+                android:layout_marginRight="15dp"
+                android:inputType="numberDecimal"
+                android:gravity="end">
+
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sendamount"
+                android:layout_alignParentEnd="true"
+                android:text="MAX"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/next2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_below="@id/rel1"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/Wallet2"
+            android:padding="15dp"
+            android:textColor="@color/Wallet"
+            android:layout_marginTop="100dp"
+            >
+
+        </Button>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:color="@color/Notification"
+        android:width="3dp"/>
+    <corners android:radius="20dp"/>
+</shape>

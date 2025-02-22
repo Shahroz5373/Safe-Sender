@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="ring">
+            <solid android:color="@color/black" />
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/spinner_icon" android:gravity="end|center_vertical" android:right="10dp"
+        android:width="25dp"
+        android:height="25dp"/>
+</layer-list>

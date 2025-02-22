@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ai"
+            android:title="AI Chatbot"
+            android:icon="@drawable/ai">
+
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Payment Settings"
+
+            >
+            <menu>
+                <item
+                    android:id="@+id/transactionlimits"
+                    android:title="Transaction Limits"
+                    android:icon="@drawable/transaction_limits"
+                    >
+
+                </item>
+                <item
+                    android:id="@+id/paymentmethods"
+                    android:title="Payment Methods"
+                    android:icon="@drawable/payment_methods"
+                    >
+
+                </item>
+            </menu>
+
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="General">
+            <menu>
+                <item
+                    android:id="@+id/security"
+                    android:title="Security"
+                    android:icon="@drawable/security"
+                    >
+
+                </item>
+                <item
+                    android:id="@+id/notificationsettings"
+                    android:title="Notification Settings"
+                    android:icon="@drawable/notifications_settings"
+                    >
+
+                </item>
+                <item
+                    android:id="@+id/apptheme"
+                    android:title="App Theme"
+                    android:icon="@drawable/apptheme"
+                    >
+
+                </item>
+                <item
+                    android:id="@+id/help"
+                    android:title="Need Help?"
+                    android:icon="@drawable/help"
+                    >
+
+                </item>
+                <item
+                    android:id="@+id/signout"
+                    android:title="Sign Out"
+                    android:icon="@drawable/sign_out"
+                    >
+
+                </item>
+            </menu>
+
+        </item>
+    </group>
+
+
+</menu>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".swapFragment"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+        <RelativeLayout
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/swap_pic" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/one"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/sign_up_stroke"
+            android:elevation="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp">
+
+
+            <RelativeLayout
+                android:id="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="From"
+                    android:textColor="@color/gray2"
+                    android:textSize="16dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/from"
+                    android:background="@drawable/sign_up_stroke2">
+
+                    <EditText
+                        android:id="@+id/amount1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/div1"
+                        android:background="#00000000"
+                        android:hint="Enter Amount"
+                        android:inputType="numberDecimal"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray3" />
+
+                    <ImageView
+                        android:id="@+id/div1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="100dp"
+                        android:src="@drawable/line" />
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="wrap_content"
+                        android:spinnerMode="dialog"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:padding="16dp">
+
+                    </Spinner>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/swap1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/two"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/swap2" />
+
+            <RelativeLayout
+                android:id="@+id/three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/swap1"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/To"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="To"
+                    android:textColor="@color/gray2"
+                    android:textSize="16dp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/To"
+                    android:background="@drawable/sign_up_stroke2">
+
+                    <EditText
+                        android:id="@+id/amount2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/div2"
+                        android:background="#00000000"
+                        android:hint="Enter Amount"
+                        android:inputType="numberDecimal"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray3" />
+
+                    <ImageView
+                        android:id="@+id/div2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="100dp"
+                        android:src="@drawable/line" />
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:spinnerMode="dialog"
+                        android:padding="16dp">
+
+                    </Spinner>
+
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rv2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/Swap"
+                    android:text="Swap"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
