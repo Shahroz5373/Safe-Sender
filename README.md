@@ -18,7 +18,7 @@ SafeSender is a financial application designed to facilitate **secure and seamle
 ## 👨‍💻 Collaborators  
 
 - **Meesum Afzaal**  
-  🔗 [GitHub Profile](https://github.com/MeesumAfzaal)  
+  🔗 [GitHub Profile](https://github.com/Meesum-Afzaal)  
 
 - **Muhammad Shahroz**  
   🔗 [GitHub Profile](https://github.com/Shahroz5373)  
