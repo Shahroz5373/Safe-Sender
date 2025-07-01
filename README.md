@@ -17,7 +17,7 @@ SafeSender is a financial application designed to facilitate **secure and seamle
 
 - **Languages**: Java, Kotlin  
 - **Frameworks**: Android SDK  
-- **APIs**: Payment Gateway, Currency Converter  
+  
 
 ---
 
